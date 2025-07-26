@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "tw-animate-css";
+
+@theme {
+  --color-primary-blue: #3C4BDC;
+  --color-orange: #F48C06;
+  --color-light-blue: #065AF3;
+  --color-background-cream: #FFF8E7;
+  --color-dark-navy: #2F327D;
+  --color-light-gray: #F5F5F5;
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+
+  --font-inter: 'Inter', sans-serif;
+
+  --text-hero-headline: 48px;
+  --text-section-heading: 36px;
+  --text-subsection-heading: 24px;
+  --text-body: 16px;
+  --text-navigation: 14px;
+  --text-button: 16px;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --radius-card: 8px;
+  --radius-button: 24px;
+
+  --shadow-card: 0 8px 32px rgba(0,0,0,0.1);
+  --shadow-button: 0 4px 16px rgba(60,75,220,0.3);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-inter);
+    color: var(--color-black);
+    line-height: 1.5;
+    background-color: var(--color-white);
+  }
+
+  h1 {
+    font-size: var(--text-hero-headline);
+    font-weight: var(--font-weight-bold);
+    line-height: 1.2;
+    color: var(--color-dark-navy);
+  }
+
+  h2 {
+    font-size: var(--text-section-heading);
+    font-weight: var(--font-weight-bold);
+    line-height: 1.3;
+    color: var(--color-dark-navy);
+  }
+
+  h3 {
+    font-size: var(--text-subsection-heading);
+    font-weight: var(--font-weight-semibold);
+    line-height: 1.4;
+    color: var(--color-dark-navy);
+  }
+
+  p {
+    font-size: var(--text-body);
+    font-weight: var(--font-weight-regular);
+    line-height: 1.6;
+    color: var(--color-black);
+  }
+
+  a {
+    color: var(--color-light-blue);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  a:hover {
+    color: var(--color-primary-blue);
+  }
+
+  button {
+    font-family: var(--font-inter);
+    font-size: var(--text-button);
+    font-weight: var(--font-weight-medium);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+  }
+}

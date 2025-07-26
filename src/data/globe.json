@@ -1,0 +1,40 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "United States"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-74, 40],
+            [-74, 41],
+            [-73, 41],
+            [-73, 40],
+            [-74, 40]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "NAME": "Canada"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-106, 50],
+            [-106, 60],
+            [-75, 60],
+            [-75, 50],
+            [-106, 50]
+          ]
+        ]
+      }
+    }
+  ]
+}
