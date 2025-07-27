@@ -1,9 +1,13 @@
 'use client';
 import Button from '@/components/ui/button';
-import { Play, Calendar, Mail, CheckCircle2 } from 'lucide-react';
+import { Play, CheckCircle2 } from 'lucide-react';
 import { useEffect } from 'react';
+import { motion } from 'framer-motion';
+import { useScrollAnimation } from '@/hooks/useAnimation.jsx';
 
 const HeroSection = () => {
+  const { ref, inView } = useScrollAnimation();
+  
   useEffect(() => {
     const cards = document.querySelectorAll('.hero-card');
     const image = document.querySelector('.hero-image');
@@ -26,42 +30,65 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <div className="relative mt-20 ">
-     <section className="h-screen bg-[#FFF2E1] relative overflow-hidden hero-container font-inter flex items-center px-4 sm:px-6 lg:px-8 py-7">
+    <div className="relative mt-20" ref={ref}>
+     <section className="h-screen bg-[#FFF2E1] dark:bg-slate-900 relative overflow-hidden hero-container font-inter flex items-center px-4 sm:px-6 lg:px-8 py-7 transition-colors duration-300">
 
       
-        <div className="absolute top-[-50px] left-[-50px] w-[258px] h-[258px] bg-[#FAD29B]/30 rounded-full blur-[96px] z-0" />
-        <div className="absolute bottom-[-100px] right-[-100px] w-[341px] h-[341px] bg-[#CDE5E7]/30 rounded-full blur-[112px] z-0" />
-
+       
       
 <div className="container mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8 py-10 mt-24 sm:mt-0 relative z-10">
           <div className="grid lg:grid-cols-[1fr_auto] gap-12 lg:gap-20 items-center">
 
           
-            <div className="text-center lg:text-left">
-              <h1 className="text-[30px] md:text-[38px] leading-[1.1] font-bold text-[#2F327D] font-inter">
+            <motion.div 
+              className="text-center lg:text-left"
+              initial={{ opacity: 0, y: 50 }}
+              animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+            >
+              <motion.h1 
+                className="text-[30px] md:text-[38px] leading-[1.1] font-bold text-[#2F327D] dark:text-white font-inter transition-colors duration-300"
+                initial={{ opacity: 0, y: 30 }}
+                animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+                transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+              >
                 <span className="text-orange-500">Studying</span> Online is <br />
                 now much easier
-              </h1>
-              <p className="mt-6 text-[15px] leading-[1.75] text-black/80 max-w-md mx-auto lg:mx-0 font-inter">
+              </motion.h1>
+              <motion.p 
+                className="mt-6 text-[15px] leading-[1.75] text-black/80 dark:text-gray-300 max-w-md mx-auto lg:mx-0 font-inter transition-colors duration-300"
+                initial={{ opacity: 0, y: 30 }}
+                animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+                transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+              >
                 Skilline is an interesting platform that will teach you in more an interactive way
-              </p>
+              </motion.p>
 
-              <div className="mt-8 flex flex-col sm:flex-row justify-center lg:justify-start items-center gap-4 sm:gap-6">
-                <Button
+              <motion.div 
+                className="mt-8 flex flex-col sm:flex-row justify-center lg:justify-start items-center gap-4 sm:gap-6"
+                initial={{ opacity: 0, y: 30 }}
+                animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+                transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
+              >
+                <motion.button 
                   size="lg"
                   className="bg-orange-500 text-white rounded-full px-8 py-4 text-[15px] font-medium shadow-[0_4px_16px_rgba(244,140,6,0.3)] hover:bg-orange/90 transition-all duration-300"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
                 >
                   Join for free
-                </Button>
-                <button className="flex items-center gap-4 text-dark-navy font-medium group focus:outline-none">
-                  <div className="w-14 h-14 rounded-full border border-[#23BDEE] flex items-center justify-center bg-white shadow-md group-hover:bg-[#23BDEE]/10 transition-colors">
+                </motion.button>
+                <motion.button 
+                  className="flex items-center gap-4 text-dark-navy dark:text-white font-medium group focus:outline-none transition-colors duration-300"
+                  whileHover={{ scale: 1.05 }}
+                >
+                  <div className="w-14 h-14 rounded-full border border-[#23BDEE] flex items-center justify-center bg-white dark:bg-slate-800 shadow-md group-hover:bg-[#23BDEE]/10 dark:group-hover:bg-[#23BDEE]/20 transition-colors">
                     <Play className="w-5 h-5 text-[#23BDEE] fill-[#23BDEE]" />
                   </div>
-                  <span className="text-dark-navy text-sm">Watch how it works</span>
-                </button>
-              </div>
-            </div>
+                  <span className="text-dark-navy dark:text-white text-sm">Watch how it works</span>
+                </motion.button>
+              </motion.div>
+            </motion.div>
 
 
             {/* Right: Image + Cards */}
@@ -80,7 +107,7 @@ const HeroSection = () => {
                 <div className="w-8 h-8 bg-primary-blue/10 rounded-[8px] flex items-center justify-center">
                   <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="50" height="50" rx="8" fill="#23BDEE" />
-                    <g clip-path="url(#clip0_1_670)">
+                    <g clipPath="url(#clip0_1_670)">
                       <path d="M18.125 11.25C17.5826 11.25 17.1429 11.6897 17.1429 12.2322V14.1964H19.1072V12.2322C19.1072 11.6897 18.6674 11.25 18.125 11.25Z" fill="white" />
                       <path d="M31.875 11.25C31.3325 11.25 30.8928 11.6897 30.8928 12.2322V14.1964H32.8571V12.2322C32.8571 11.6897 32.4174 11.25 31.875 11.25Z" fill="white" />
                       <path d="M35.8036 14.1964H32.8571V18.125C32.8571 18.6675 32.4174 19.1072 31.875 19.1072C31.3325 19.1072 30.8928 18.6675 30.8928 18.125V14.1964H19.1071V18.125C19.1071 18.6675 18.6674 19.1072 18.125 19.1072C17.5825 19.1072 17.1428 18.6675 17.1428 18.125V14.1964H14.1964C12.5692 14.1964 11.25 15.5156 11.25 17.1429V35.8036C11.25 37.4309 12.5692 38.75 14.1964 38.75H35.8036C37.4308 38.75 38.75 37.4309 38.75 35.8036V17.1429C38.75 15.5156 37.4308 14.1964 35.8036 14.1964ZM36.7857 35.8036C36.7857 36.346 36.346 36.7858 35.8035 36.7858H14.1964C13.654 36.7858 13.2143 36.346 13.2143 35.8036V23.0357H36.7857V35.8036Z" fill="white" />
