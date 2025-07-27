@@ -3,7 +3,7 @@ import { useTheme } from '@/hooks/useTheme.jsx';
 import { motion } from 'framer-motion';
 
 const ThemeToggle = () => {
-  const { theme, toggleTheme } = useTheme();
+  const { theme, toggleTheme } = useTheme('light');
 
   return (
     <motion.button
