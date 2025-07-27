@@ -24,7 +24,7 @@ const IntegrationsSection = () => {
     <div className="bg-white py-16 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-center ">
-          {/* Left Side - Integration Logos Zig-Zag */}
+          {/* Left Side */}
           <div className="grid grid-cols-2 gap-x-2 gap-y-12 px-20">
 
             {integrations.map((integration, index) => (
@@ -43,7 +43,7 @@ const IntegrationsSection = () => {
             ))}
           </div>
 
-          {/* Right Side - Text Content */}
+          {/* Right Side */}
           <div className="space-y-8">
             <div>
                

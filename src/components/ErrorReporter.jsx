@@ -64,7 +64,6 @@ export default function ErrorReporter({ error, reset }) {
     };
   }, []);
 
-  /* ─ extra postMessage when on the global-error route ─ */
   useEffect(() => {
     if (!error) return;
     window.parent.postMessage(
@@ -83,10 +82,9 @@ export default function ErrorReporter({ error, reset }) {
     );
   }, [error]);
 
-  /* ─ ordinary pages render nothing ─ */
   if (!error) return null;
 
-  /* ─ global-error UI ─ */
+
   return (
     <div className="min-h-screen bg-background text-foreground flex items-center justify-center p-4">
       <div className="max-w-md w-full text-center space-y-6">

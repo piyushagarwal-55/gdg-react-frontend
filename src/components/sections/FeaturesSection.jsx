@@ -3,7 +3,7 @@ import { Grid3X3, Calendar, Users, BookOpen, CheckCircle, Play, Target } from 'l
 
 const FeaturesSection = () => {
   return (
-    <div className="min-h-screen bg-gray-50 py-16 px-4 lg:px-20">
+    <div className="min-h-screen bg-white py-16 px-4 lg:px-20">
       <div className="max-w-6xl mx-auto space-y-32">
 
         {/* Header */}
@@ -16,26 +16,22 @@ const FeaturesSection = () => {
           </p>
         </div>
 
-        {/* User Interface Section */}
+     
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
-          {/* Left Side - Interface Mockup */}
           <div className="relative">
-            {/* Decorative Circles Behind the Image */}
             <div className="absolute top-[-30px] left-[20px] w-14 h-14 bg-green-400 rounded-full opacity-60 z-0"></div>
             <div className="absolute bottom-[6px] right-20 w-20 h-20 bg-blue-400 rounded-full z-0"></div>
 
             <div className="absolute bottom-2 right-40 w-6 h-6 bg-orange-400 rounded-full opacity-60 z-0"></div>
 
 
-            {/* Main Interface Image (Above Circles) */}
             <img
-              src="../../../public/videocall.png"
+              src="/videocall.png"
               alt="Instructor Eveny Howard"
               className="rounded-[8px] w-full h-auto relative z-10"
             />
           </div>
 
-          {/* Right Side - Content */}
           <div className="space-y-6">
             <div>
               <h3 className="text-3xl font-bold text-[#2F327D] mb-4">
@@ -78,9 +74,7 @@ const FeaturesSection = () => {
           </div>
         </div>
 
-        {/* Tools for Teachers Section */}
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
-          {/* Left Side - Content */}
           <div className="space-y-6">
             <div>
               <h3 className="text-3xl font-bold text-[#2F327D] mb-4">
@@ -93,16 +87,12 @@ const FeaturesSection = () => {
             </div>
           </div>
 
-          {/* Right Side - Teacher Image */}
-        <img src="../../../public/features-2.png" alt="" />
+        <img src="/features-2.png" alt="" />
         </div>
 
-        {/* Assessment Section */}
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Side - Assessment Preview */}
-          <img src="../../../public/features-3.png" alt="" />
+          <img src="/features-3.png" alt="" />
 
-          {/* Right Side - Content */}
           <div className="space-y-6">
             <div>
               <h3 className="text-3xl font-bold text-[#2F327D] mb-4">

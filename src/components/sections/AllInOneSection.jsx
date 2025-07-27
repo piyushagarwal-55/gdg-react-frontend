@@ -3,9 +3,9 @@ import { FileText, Calendar, Users } from 'lucide-react';
 
 const SkillmeFeatures = () => {
   return (
-    <div className="min-h-screen bg-gray-50 flex items-center justify-center p-8">
+    <div className="min-h-screen bg-[#fff] flex items-center justify-center p-8">
       <div className="max-w-6xl mx-auto">
-        {/* Header Section */}
+      
         <div className="text-center mb-16">
           <h1 className="text-4xl font-bold text-[#252641] mb-4">
             All-In-One <span className="text-orange-500">Cloud Software.</span>
@@ -16,9 +16,9 @@ const SkillmeFeatures = () => {
           </p>
         </div>
 
-        {/* Features Grid */}
+       
         <div className="grid md:grid-cols-3 gap-8">
-          {/* Online Billing Feature */}
+         
           <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300">
             <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mb-6">
               <FileText className="w-8 h-8 text-white" />
@@ -32,7 +32,6 @@ const SkillmeFeatures = () => {
             </p>
           </div>
 
-          {/* Easy Scheduling Feature */}
           <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300">
             <div className="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mb-6">
               <Calendar className="w-8 h-8 text-white" />
@@ -46,7 +45,7 @@ const SkillmeFeatures = () => {
             </p>
           </div>
 
-          {/* Customer Tracking Feature */}
+        
           <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow duration-300">
             <div className="w-16 h-16 bg-cyan-500 rounded-full flex items-center justify-center mb-6">
               <Users className="w-8 h-8 text-white" />

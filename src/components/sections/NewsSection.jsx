@@ -1,7 +1,7 @@
 const newsData = [
   {
     image:
-      "../../../public/laptopnews.png",
+      "/laptopnews.png",
     tagText: "NEWS",
     title:
       "Class adds $30 million to its balance sheet for a Zoom-friendly edtech solution",
@@ -11,7 +11,7 @@ const newsData = [
   },
   {
     image:
-      "../../../public/news1.png",
+      "/news1.png",
     tagType: "text",
     tagText: "PRESS RELEASE",
     title:
@@ -21,7 +21,7 @@ const newsData = [
   },
   {
     image:
-      "../../../public/news2.png",
+      "/news2.png",
     tagText: "NEWS",
     title:
       "Zoom's earliest investors are betting millions on a better Zoom for schools",
@@ -31,7 +31,7 @@ const newsData = [
   },
   {
     image:
-      "../../../public/news3.png",
+      "/news3.png",
     tagText: "NEWS",
     title:
       "Former Blackboard CEO Raises $16M to Bring LMS Features to Zoom Classrooms",
@@ -91,9 +91,9 @@ const NewsSection = () => {
             </div>
           </div>
 
-          {/* Right column with 3 smaller cards */}
+        
           <div className="flex flex-col gap-8">
-            {/* Card 2 - Small */}
+           
             <div className="bg-white rounded-[20px] shadow-card p-5 flex items-center gap-5">
              <div className="flex-shrink-0">
                 <img
@@ -123,7 +123,7 @@ const NewsSection = () => {
              
             </div>
 
-            {/* Card 3 - Small */}
+        
             <div className="bg-white rounded-[20px] shadow-card p-5 flex items-center gap-5">
               <div className="relative flex-shrink-0">
                 <img
@@ -152,7 +152,7 @@ const NewsSection = () => {
               </div>
             </div>
 
-            {/* Card 4 - Small */}
+        
             <div className="bg-white rounded-[20px] shadow-card p-5 flex items-center gap-5">
               <div className="relative flex-shrink-0">
                 <img

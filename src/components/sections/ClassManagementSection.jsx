@@ -50,7 +50,7 @@ const ClassManagementSection = () => {
               </p>
             </div>
           </div>
-         <img src="../../../public/gradebook.png" alt="" />
+         <img src="/gradebook.png" alt="" />
         </div>
       </div>
     </section>

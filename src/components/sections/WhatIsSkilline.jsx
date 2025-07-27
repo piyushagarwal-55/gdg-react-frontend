@@ -5,7 +5,7 @@ const WhatIsSkilline = () => {
   return (
     <section className="py-20 lg:py-28">
       <div className="container mx-auto max-w-6xl px-4">
-        {/* Section Title */}
+       
         <div className="text-center">
           <h2 className="text-[#2F327D] text-3xl md:text-[32px] font-bold leading-tight">
             What is <span className="text-orange-500">Skilline?</span>
@@ -18,9 +18,9 @@ const WhatIsSkilline = () => {
           </p>
         </div>
 
-        {/* Cards Section */}
+       
         <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
-          {/* Instructor Card */}
+        
           <div className="relative rounded-2xl overflow-hidden h-80 group">
             <img
               src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/61e6020a-04de-4f30-9450-f6fc88d3703b-skilline-education-netlify-app/assets/images/1.9122ea9ee7551e8b4773-22.jpg"
@@ -36,7 +36,7 @@ const WhatIsSkilline = () => {
             </div>
           </div>
 
-          {/* Student Card */}
+      
           <div className="relative rounded-2xl overflow-hidden h-80 group">
             <img
               src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/61e6020a-04de-4f30-9450-f6fc88d3703b-skilline-education-netlify-app/assets/images/2.81fdbb44584c608767e4-23.jpg"
@@ -53,9 +53,8 @@ const WhatIsSkilline = () => {
           </div>
         </div>
 
-        {/* Explanation Section */}
         <div className="mt-28 grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-8 items-center">
-          {/* Text Block */}
+         
           <div className="lg:pr-10">
             <h3 className="text-2xl font-semibold text-[#2F327D] leading-snug relative">
               <span className="relative inline-block">
@@ -78,19 +77,19 @@ const WhatIsSkilline = () => {
             </a>
           </div>
 
-          {/* Image + Box Decoration + Play Button */}
+        
           <div className="relative lg:ml-10">
-            {/* Box Decorations */}
+         
           <div className="absolute -top-4 -left-4 w-20 h-20 bg-[#23BDEE] rounded-tl-[16px] rounded-tr-none rounded-br-none rounded-bl-none z-0 hidden lg:block"></div>
 
 
 
             <div className="absolute -bottom-3 -right-3 w-20 h-20 bg-orange-500 rounded-tl-[16px]  z-0 hidden lg:block"></div>
 
-            {/* Video Container */}
+          
             <div className="relative w-full rounded-2xl overflow-hidden shadow-lg aspect-[3/2]">
               <img
-                src="../../../public/video.png"
+                src="/video.png"
                 alt="Classroom with students and teacher"
                 className="w-full h-full object-cover"
               />

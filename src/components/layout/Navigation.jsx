@@ -23,15 +23,16 @@ const Navigation = () => {
 
   return (
     <>
-      <header className="absolute top-0 left-0 w-full z-50">
+      <header className="absolute bg-[#FFF2E1]  top-0 left-0 w-full z-50">
         <div className="container mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 py-6">
           {/* Logo */}
-         <a href="/" className="relative flex items-center ml-10">
+      <a href="/" className="relative flex items-center ml-2 sm:ml-4 md:ml-6 lg:ml-10">
+
   <div className="w-10 h-10 bg-[#23BDEE] rounded-lg rotate-45 flex-shrink-0 z-10" />
   <span className="-ml-8 text-2xl font-bold text-dark-navy z-20">Skilline</span>
 </a>
 
-          {/* Desktop Navigation */}
+       
           <nav className="hidden lg:flex items-center space-x-[60px]">
             {navLinks.map((link) => (
               <a
@@ -48,7 +49,6 @@ const Navigation = () => {
             ))}
           </nav>
 
-          {/* Buttons */}
           <div className="hidden lg:flex items-center gap-6">
             <a
               href="#"
@@ -64,7 +64,7 @@ const Navigation = () => {
             </a>
           </div>
 
-          {/* Mobile Menu Toggle */}
+       
           <div className="lg:hidden">
             <button
               type="button"
@@ -77,7 +77,7 @@ const Navigation = () => {
           </div>
         </div>
       </header>
-      {/* Mobile Menu */}
+     
       <div
         className={cn(
           "fixed inset-0 z-40 bg-white/95 backdrop-blur-sm lg:hidden transition-transform duration-300 ease-in-out",

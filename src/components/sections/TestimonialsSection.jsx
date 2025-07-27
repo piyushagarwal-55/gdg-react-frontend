@@ -42,7 +42,7 @@ const TestimonialsSection = () => {
           <div className="relative mt-12 lg:mt-0">
             <div className="relative w-full max-w-[500px] h-[380px] md:h-[420px] mx-auto lg:ml-auto lg:mr-0">
               <img
-                src="../../../public/testimonalwoman.png"
+                src="/testimonalwoman.png"
                 alt="Gloria Rose testimonial"
                 className="rounded-xl object-cover w-100 h-full"
               />

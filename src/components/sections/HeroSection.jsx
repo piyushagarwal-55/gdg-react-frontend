@@ -26,14 +26,15 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <div className="relative">
-      <section className="h-screen bg-[#FFF2E1] relative overflow-hidden hero-container font-inter flex items-center px-7 py-7">
+    <div className="relative mt-20 ">
+     <section className="h-screen bg-[#FFF2E1] relative overflow-hidden hero-container font-inter flex items-center px-4 sm:px-6 lg:px-8 py-7">
+
       
         <div className="absolute top-[-50px] left-[-50px] w-[258px] h-[258px] bg-[#FAD29B]/30 rounded-full blur-[96px] z-0" />
         <div className="absolute bottom-[-100px] right-[-100px] w-[341px] h-[341px] bg-[#CDE5E7]/30 rounded-full blur-[112px] z-0" />
 
       
-        <div className="container mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8 py-10 relative z-10">
+<div className="container mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8 py-10 mt-24 sm:mt-0 relative z-10">
           <div className="grid lg:grid-cols-[1fr_auto] gap-12 lg:gap-20 items-center">
 
           
@@ -64,13 +65,15 @@ const HeroSection = () => {
 
 
             {/* Right: Image + Cards */}
-            <div className="relative w-full max-w-[480px] mx-auto h-[550px] hero-image select-none mr-8 px-4">
-              {/* Main Girl Image */}
-              <img
-                src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/61e6020a-04de-4f30-9450-f6fc88d3703b-skilline-education-netlify-app/assets/images/girl.c01e367eea3b612e222d-1.webp"
-                alt="Student"
-                className="w-full h-full object-contain px-6 py-15"
-              />
+           <div className="relative w-full max-w-[350px] sm:max-w-[480px] mx-auto h-[500px] sm:h-[550px] hero-image select-none px-2 sm:px-4">
+
+           
+             <img
+  src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/61e6020a-04de-4f30-9450-f6fc88d3703b-skilline-education-netlify-app/assets/images/girl.c01e367eea3b612e222d-1.webp"
+  alt="Student"
+  className="w-full h-full object-cover  px-0 py-0 sm:px-6 sm:py-15"
+/>
+
 
               {/* Assisted Students */}
               <div className="absolute top-[25%] left-[-2%] bg-white p-3 rounded-[8px] shadow-[0_8px_32px_rgba(0,0,0,0.1)] flex items-center gap-3 w-max hero-card">
@@ -105,7 +108,8 @@ const HeroSection = () => {
                 </div>
               </div>
 
-              <div className="absolute top-[50%] right-[-40px] bg-white px-3 py-2 rounded-[6px] shadow-[0_4px_16px_rgba(0,0,0,0.08)] flex items-center gap-2 w-max hero-card">
+            <div className="absolute sm:top-[50%] top-[45%] right-[-44px] bg-white px-3 py-2 rounded-[6px] shadow-[0_4px_16px_rgba(0,0,0,0.08)] flex items-center gap-2 w-[240px] hero-card">
+
                 <div className="w-10 h-10 bg-orange/20 rounded-full flex items-center justify-center">
                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
 
@@ -130,25 +134,28 @@ const HeroSection = () => {
               </div>
 
            
-              <div className="absolute top-[60%] left-[-10%] w-[260px] bg-white p-4 rounded-[8px] shadow-[0_8px_32px_rgba(0,0,0,0.1)] hero-card">
+          <div className="absolute top-[60%] left-1 sm:left-[-10%]  w-[55%] max-w-[200px] sm:w-[260px] bg-white p-3 rounded-[8px] shadow-md hero-card">
 
-                <div className="flex items-center gap-3">
-                  <img
-                    src="/avatar.png"
-                    alt="User"
-                    width={48}
-                    height={48}
-                    className="rounded-full"
-                  />
-                  <div>
-                    <p className="font-semibold text-[#595959] text-sm">User Experience Class</p>
-                    <p className="text-black/60 text-xs">Today at 12.00 PM</p>
-                  </div>
-                </div>
-                <Button className="w-full mt-3 bg-[#E94379] hover:bg-[#E94379]/90 text-white rounded-[24px] text-[14px] font-bold py-3 shadow-[0_4px_16px_rgba(233,67,121,0.08)]">
-                  Join Now
-                </Button>
-              </div>
+  <div className="flex items-center gap-2 sm:gap-3">
+    <img
+      src="/avatar.png"
+      alt="User"
+      width={36}
+      height={36}
+      className="rounded-full sm:w-12 sm:h-12"
+    />
+    <div>
+      <p className="font-semibold text-[#595959] text-xs sm:text-sm">
+        User Experience Class
+      </p>
+      <p className="text-black/60 text-[10px] sm:text-xs">Today at 12.00 PM</p>
+    </div>
+  </div>
+  <Button className="w-full mt-2 sm:mt-3 bg-[#E94379] hover:bg-[#E94379]/90 text-white rounded-[24px] text-[12px] sm:text-[14px] font-bold py-2 sm:py-3 shadow-[0_4px_16px_rgba(233,67,121,0.08)]">
+    Join Now
+  </Button>
+</div>
+
 
               <div className="absolute top-[20%] right-[40px] w-12 h-12 bg-[#F77A93] rounded-[8px] shadow-[0_8px_32px_rgba(0,0,0,0.10)] flex items-center justify-center hero-card">
                 <div className="relative w-8 h-8 flex items-center justify-center">
@@ -169,7 +176,7 @@ const HeroSection = () => {
         
       </section>
 
-      {/* Wave SVG - Now positioned to overlay and create cut effect */}
+    
   
 
     </div>
