@@ -103,7 +103,7 @@ const HeroSection = () => {
 
 
               {/* Assisted Students */}
-              <div className="absolute top-[25%] left-[-2%] bg-white p-3 rounded-[8px] shadow-[0_8px_32px_rgba(0,0,0,0.1)] flex items-center gap-3 w-max hero-card">
+              <div className="absolute top-[25%] left-2 sm:left-[-2%] bg-white p-3 rounded-[8px] shadow-[0_8px_32px_rgba(0,0,0,0.1)] flex items-center gap-3 w-max hero-card">
                 <div className="w-8 h-8 bg-primary-blue/10 rounded-[8px] flex items-center justify-center">
                   <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="50" height="50" rx="8" fill="#23BDEE" />
@@ -135,7 +135,7 @@ const HeroSection = () => {
                 </div>
               </div>
 
-            <div className="absolute sm:top-[50%] top-[45%] right-[-44px] bg-white px-3 py-2 rounded-[6px] shadow-[0_4px_16px_rgba(0,0,0,0.08)] flex items-center gap-2 w-[240px] hero-card">
+            <div className="absolute sm:top-[50%] top-[45%] right-2 sm:right-[-44px] bg-white px-3 py-2 rounded-[6px] shadow-[0_4px_16px_rgba(0,0,0,0.08)] flex items-center gap-2 w-[240px] hero-card">
 
                 <div className="w-10 h-10 bg-orange/20 rounded-full flex items-center justify-center">
                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -161,7 +161,7 @@ const HeroSection = () => {
               </div>
 
            
-          <div className="absolute top-[60%] left-1 sm:left-[-10%]  w-[55%] max-w-[200px] sm:w-[260px] bg-white p-3 rounded-[8px] shadow-md hero-card">
+          <div className="absolute top-[60%] left-1 sm:left-[-10%] w-[55%] max-w-[200px] sm:w-[260px] bg-white p-3 rounded-[8px] shadow-md hero-card">
 
   <div className="flex items-center gap-2 sm:gap-3">
     <img

@@ -25,7 +25,7 @@ const IntegrationsSection = () => {
     <div className="bg-white dark:bg-slate-900 py-16 px-6 transition-colors duration-300">
       <div className="max-w-6xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-center ">
-          <StaggeredContainer className="grid grid-cols-2 gap-x-2 gap-y-12 px-20">
+          <StaggeredContainer className="grid grid-cols-2 gap-x-2 gap-y-12 px-4 sm:px-8 lg:px-20">
 
             {integrations.map((integration, index) => (
               <StaggeredItem
